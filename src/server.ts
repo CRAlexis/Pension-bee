@@ -8,7 +8,7 @@ const app = express();
 dotenv.config()
 
 app.get('*', routes.index)
-app.listen(process.env.PORT, () => {
+app.listen(process.env.PORT ?? 8080, () => {
     // Log.info("Server running");
 });
 
