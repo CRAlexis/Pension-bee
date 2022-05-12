@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+      "esModuleInterop": true,
+      "target": "esnext",
+      "module": "commonjs",
+      "noImplicitAny": true,
+      "moduleResolution": "node",
+      "sourceMap": true,
+      "outDir": "build",
+      "baseUrl": ".",
+      "skipLibCheck": true,
+      "paths": {
+          "*": [
+              "node_modules/*"
+          ],
+          "@controllers/*": ["src/controllers/*"],
+          "@content/*": ["src/content/*"],
+      }
+  },
+  "include": [
+      "src/template.html",
+      "src/**/*",
+      "global.d.ts",
+  ],
+}
